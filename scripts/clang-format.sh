@@ -1,0 +1,1 @@
+find src test \( -name \*.h -o -name \*.cpp \) -exec clang-format -style=file -i {} \;
