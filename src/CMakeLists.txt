@@ -43,7 +43,10 @@ foreach( plugin ${LLVM_PRACTICE_PLUGINS} )
         target_link_libraries(${plugin} ${llvm_libs})
 endforeach()
 
-add_subdirectory (visualize)
+if(BuildVisualTools)
+  add_subdirectory (visualize)
+endif()
+
 
 
 

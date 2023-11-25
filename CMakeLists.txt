@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.27)
+cmake_minimum_required(VERSION 3.22)
 project(llvm-practice)
 
 function(download_file url filename hash_type hash)

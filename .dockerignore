@@ -1,0 +1,5 @@
+build
+packages
+Dockerfile
+.DS_Store
+.vscode
