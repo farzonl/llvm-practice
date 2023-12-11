@@ -9,6 +9,7 @@ set(LLVM_PRACTICE_PLUGINS
     BasicBlockCounterPass
     CFGEdgeCounterPass
     InstructionCountPass
+    BackEdgeDetectorPass
     )
 
 find_package(LLVM REQUIRED CONFIG)
@@ -28,6 +29,7 @@ link_directories(${LLVM_LIBRARY_DIRS})
 add_definitions(${LLVM_DEFINITIONS})
 
 set(BasicBlockCounterPass_SOURCES BasicBlockCounterPass.cpp)
+set(BackEdgeDetectorPass_SOURCES BackEdgeDetectorPass.cpp)
 set(CFGEdgeCounterPass_SOURCES CFGEdgeCounterPass.cpp)
 set(InstructionCountPass_SOURCES InstructionCountPass.cpp)
 llvm_map_components_to_libnames(llvm_libs support core irreader passes)
